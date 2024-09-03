@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <div>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+                <p>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="tel" id="itel" required autocomplete="tel-area-code" pattern="\(\d{2})[0-9]{4}-[0-9]{4}"> <!--Estudar mais sobre RegEx-->
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Apagar">
+                </p>
+                </div>
+        </form>
+    </fieldset>
+</body>
+</html>
